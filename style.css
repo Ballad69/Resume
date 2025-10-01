@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background:#f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 50px;
+  background: #333132;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0,0.1);
+}
+.container .left-side
+{
+   position: relative;
+   background-color: #333132; 
+   padding: 20px;
+}
+
+.profileText
+{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 20px;
+}
+
+.profileText .profile
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .profile img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 100px;
+}
+
+.profileText .about
+{
+    color:#f4f6f8;
+    padding: 18px;
+}
+
+.profileText .description
+{
+    color: #f4f6f8;
+    display: flex;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.profileText .contact-info
+{
+    color: #f4f6f8;
+    padding: 18px;
+    margin-right:20px;
+}
+
+.profileText .contact-list
+{
+    color: #f4f6f8;
+    font-size: 13px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profileText .contact-list li
+{
+    margin-bottom: 10px;
+}
+
+.profileText .skills
+{
+    color: #f4f6f8;
+    margin-right: 59px;
+    padding: 18px;
+}
+
+.profileText .skill-list {
+  color: #f4f6f8;
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.profileText .skill-list li { 
+  display: inline-block; 
+  margin-left: 58px;
+  padding: 5px;
+}
+
+.profileText .skills span
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.profileText .Language
+{
+    color: #f4f6f8;
+    padding: 10px;
+}
+
+.profileText .Language-list
+{
+    font-size: 15px;
+    color:#f4f6f8;
+    padding: 0;
+    margin: 0;
+}
+
+.profileText .Language-list li
+{
+  margin-right: 50px;
+  padding: 5px;
+}
+
+.container .right-side
+{
+    position: relative;
+    background: #f4f6f8;
+    padding: 10px;
+}
+
+.name-container {
+  margin-bottom: 40px;
+}
+
+.first-name{
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1;
+  display: block;
+  text-align: left;
+}
+
+.last-name{
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1;
+    display: block;
+    text-align: left;
+}
+.job-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  margin-top: 6px;
+}
+
+.section h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333132;
+}
+.section h2 i {
+  font-size: 18px;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.timeline li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 30px;
+}
+
+.timeline h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.timeline .date {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 6px;
+}
+.timeline p, .timeline li ul {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+.timeline li ul {
+  list-style-type: disc;
+  margin: 5px 0 0 18px;
+}
+.timeline::before 
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  width: 2px;
+  background-color: #ccc;
+}
